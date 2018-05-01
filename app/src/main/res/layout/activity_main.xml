@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="182dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="16dp"
+        android:text="Совпадает ли название цвета слева с цветом текста справа "
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="104dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="168dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="168dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules" />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:layout_marginStart="50dp"
+        android:onClick="yes_clicked"
+        android:text="ДА"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="no_clicked"
+        android:text="НЕТ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="321dp"
+        android:layout_height="8dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="22dp"
+        android:max="60"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules" />
+
+</android.support.constraint.ConstraintLayout>
